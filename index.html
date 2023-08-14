@@ -9,7 +9,10 @@
       <div class="d-flex flex-column m-3">
         <input type="file" id="fileInput" class="form-control mb-3">
         <textarea class="mb-2 form-control" id="text"></textarea>
-        <button type="button" id="analyse" class="btn btn-info">Analisar</button>
+        <div class="d-flex justify-content-end gap-2">
+          <button type="button" id="analyse" class="btn btn-lg btn-info">Analisar</button>
+          <button type="button" id="save" class="btn btn-primary ">Salvar</button>
+        </div>
       </div>
     
       <table class="table">
@@ -17,6 +20,9 @@
             <tr>
               <th>Lexema</th>
               <th>Token</th>
+              <th>Linha</th>
+              <th>Coluna Inicio</th>
+              <th>Coluna Fim</th>
             </tr>
           </thead>
           <tbody id="tableBody">
